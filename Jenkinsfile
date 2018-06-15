@@ -1,6 +1,6 @@
 node{
 	stage('Build'){
-		echo '$env.BUILD_TAG'
+		echo 'env.BUILD_TAG'
 		echo '${env.CHANGE_ID}'
 		echo '${env.CHANGE_URL}'
 		echo '${env.CHANGE_TITLE}'
