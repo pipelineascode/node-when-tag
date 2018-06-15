@@ -1,17 +1,16 @@
 node{
 	stage('Build'){
-		echo env.BRANCH_NAME
-		echo env.BUILD_TAG
-		println "test ${env.BUILD_TAG}"		
-		echo '${env.CHANGE_ID}'
-		echo '${env.CHANGE_URL}'
-		echo '${env.CHANGE_TITLE}'
-		echo '${env.CHANGE_AUTHOR}'
-		echo '${env.CHANGE_AUTHOR_DISPLAY_NAME}'
-		echo '${env.CHANGE_AUTHOR_EMAIL}'
-		echo '${env.CHANGE_TARGET}'
-		echo '${env.BUILD_NUMBER}'
-		echo '${env.BUILD_ID}'
-		echo '${env.BUILD_DISPLAY_NAME}'
+		println '${env.BRANCH_NAME}'
+		println '${env.BUILD_TAG}'
+		println '${env.CHANGE_ID}'
+		println '${env.CHANGE_URL}'
+		println '${env.CHANGE_TITLE}'
+		println '${env.CHANGE_AUTHOR}'
+		println '${env.CHANGE_AUTHOR_DISPLAY_NAME}'
+		println '${env.CHANGE_AUTHOR_EMAIL}'
+		println '${env.CHANGE_TARGET}'
+		println '${env.BUILD_NUMBER}'
+		println '${env.BUILD_ID}'
+		println '${env.BUILD_DISPLAY_NAME}'
 	}
 }
