@@ -2,6 +2,7 @@ node{
 	stage('Build'){
 		echo env.BRANCH_NAME
 		echo env.BUILD_TAG
+		println "test ${env.BUILD_TAG}"		
 		echo '${env.CHANGE_ID}'
 		echo '${env.CHANGE_URL}'
 		echo '${env.CHANGE_TITLE}'
