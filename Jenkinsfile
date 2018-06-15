@@ -1,6 +1,9 @@
 node{
 	stage("Build"){
-		env.each { name, value -> println "Name: $name -> Value $value" }
+		bat 'env > env.txt'
+		readFile('env.txt').split("\r?\n").each {
+			println it
+		}
 		println "-----"
 		println "${env.TAG_NAME}" 
 		println "${env.BRANCH_NAME}"
