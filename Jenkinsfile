@@ -1,5 +1,6 @@
 node{
 	stage("Build"){
+		echo sh(returnStdout: true, script: 'env')
 		println "${env.TAG_NAME}" 
 		println "${env.BRANCH_NAME}"
 		println "${env.BUILD_TAG}"
