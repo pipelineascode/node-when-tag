@@ -1,5 +1,6 @@
 node{
 	stage("Build"){
+		println "${env.TAG_NAME}" 
 		println "${env.BRANCH_NAME}"
 		println "${env.BUILD_TAG}"
 		println "${env.CHANGE_ID}"
