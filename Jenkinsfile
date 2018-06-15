@@ -1,6 +1,6 @@
 node{
 	stage('Build'){
-		echo ${env.BUILD_TAG}
+		echo '${env.BUILD_TAG}'
 	
 	}
 }
